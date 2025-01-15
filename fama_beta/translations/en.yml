@@ -1,0 +1,11 @@
+configuration:
+  enable_sensor_station:
+    name: Enable Sensor Station
+    description: Activates the synchronization of data from the city sensor stations
+
+  smart_home_type:
+    name: Smart Home type
+    description: Sets the Smart Home type so that the data is sent in the correct format.
+
+  mqtt_client_id:
+    name: MQTT Client ID

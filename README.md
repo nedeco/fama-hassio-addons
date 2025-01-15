@@ -1,0 +1,16 @@
+# Fama Home Assistant Add-ons
+
+## Installing
+
+Click on the button below:
+
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/nedeco/fama-hass-addons)
+
+OR
+
+In Home Assistant, go to Configuration > Add-ons, Backups & Supervisor > Add-on Store. Then, select ... > Repositories, and add `https://github.com/nedeco/fama-hass-addons` to the list.
+
+## This repository includes the following add-ons:
+
+### [Fama](./fama)
+### [Fama Beta](./fama_beta)
