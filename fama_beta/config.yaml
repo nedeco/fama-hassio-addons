@@ -10,10 +10,12 @@ schema:
   enable_sensor_station: "bool"
   smart_home_type: "list(HA|IB)"
   mqtt_client_id: "str"
+  home_assistant_discovery_prefix: "str"
 options:
   enable_sensor_station: true
   smart_home_type: HA
   mqtt_client_id: fama
+  home_assistant_discovery_prefix: "homeassistant"
 init: false
 boot: auto
 services:
