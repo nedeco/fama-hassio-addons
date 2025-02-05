@@ -7,17 +7,20 @@ export DEBUG=$(bashio::config "debug")
 
 if ! bashio::services.available "mqtt"; then
   bashio::log.error "No internal MQTT service found"
+  export MQTT_HOST=$(bashio::config "mqtt_host")
+  export MQTT_PORT=$(bashio::config "mqtt_port")
+  export MQTT_TLS_ENABLED=$(bashio::config "mqtt_ssl")
+  export MQTT_USERNAME=$(bashio::config "mqtt_username")
+  export MQTT_PASSWORD=$(bashio::config "mqtt_password")
 else
   bashio::log.info "MQTT service found, fetching credentials ..."
   export MQTT_HOST=$(bashio::services mqtt "host")
   export MQTT_PORT=$(bashio::services mqtt "port")
   export MQTT_TLS_ENABLED=$(bashio::services mqtt "ssl")
+  export MQTT_USERNAME=$(bashio::services mqtt "username")
+  export MQTT_PASSWORD=$(bashio::services mqtt "password")
 fi
 
-export MQTT_USERNAME=$(bashio::services mqtt "username")
-export MQTT_PASSWORD=$(bashio::services mqtt "password")
 export MQTT_CLIENT_ID=$(bashio::config "mqtt_client_id")
-
-env
 
 java -jar /fama.jar

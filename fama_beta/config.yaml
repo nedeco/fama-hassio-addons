@@ -12,6 +12,11 @@ schema:
   enable_sensor_station: "bool"
   smart_home_type: "list(HA|IB)"
   mqtt_client_id: "str"
+  mqtt_host: "str"
+  mqtt_port: "int"
+  mqtt_ssl: "bool"
+  mqtt_username: "str"
+  mqtt_password: "str"
   home_assistant_discovery_prefix: "str"
   debug: "bool"
 options:
@@ -20,6 +25,10 @@ options:
   mqtt_client_id: fama
   home_assistant_discovery_prefix: "homeassistant"
   debug: false
+  mqtt_port: 1883
+  mqtt_ssl: false
+  mqtt_username: "fama"
+  mqtt_password: "fama"
 init: false
 boot: auto
 services:
