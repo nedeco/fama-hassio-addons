@@ -4,7 +4,7 @@ slug: fama
 description: Fama integrates Smart City systems from the German city of Solingen into smart home environments. Enabling seamless connectivity and functionality.
 url: "https://github.com/nedeco/fama"
 arch:
-  - armv8
+  - aarch64
   - amd64
 schema:
   enable_sensor_station: "bool"
