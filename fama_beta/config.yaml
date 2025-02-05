@@ -3,6 +3,8 @@ version: 1.0.0-beta.4.ha
 slug: fama
 description: Fama integrates Smart City systems from the German city of Solingen into smart home environments. Enabling seamless connectivity and functionality.
 url: "https://github.com/nedeco/fama"
+homeassistant_api: true
+hassio_api: true
 arch:
   - aarch64
   - amd64
@@ -11,11 +13,13 @@ schema:
   smart_home_type: "list(HA|IB)"
   mqtt_client_id: "str"
   home_assistant_discovery_prefix: "str"
+  debug: "bool"
 options:
   enable_sensor_station: true
   smart_home_type: HA
   mqtt_client_id: fama
   home_assistant_discovery_prefix: "homeassistant"
+  debug: false
 init: false
 boot: auto
 services:
