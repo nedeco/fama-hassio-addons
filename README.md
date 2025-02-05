@@ -1,5 +1,10 @@
 # Fama Home Assistant Add-ons
 
+Fama is a software solution designed to bridge weather sensor data with home automation systems. Currently focused on the city of Solingen, Fama is designed to receive data from RabbitMQ, process it, and format it for seamless integration with various supported home systems.
+
+For more details on setup and configuration, check the documentation:
+📖 **[Fama Documentation](https://github.com/nedeco/fama/blob/development/README.md)**
+
 ## Installing
 
 Click on the button below:
