@@ -1,4 +1,4 @@
-FROM devopsnedeco/fama:1.0.0-beta.2
+FROM devopsnedeco/fama:1.0.0-beta.4
 
 LABEL \
   io.hass.name="Fama" \
